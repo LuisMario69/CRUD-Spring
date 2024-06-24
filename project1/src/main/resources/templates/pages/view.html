@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ver Usuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Detalles del Usuario</h1>
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <p class="mb-2"><strong>Nombre:</strong> <span th:text="${registro.nombre}"></span></p>
+        <p class="mb-2"><strong>Apellido:</strong> <span th:text="${registro.apellido}"></span></p>
+        <p class="mb-2"><strong>Correo:</strong> <span th:text="${registro.correo}"></span></p>
+        <p class="mb-2"><strong>Descripción:</strong> <span th:text="${registro.descripcion}"></span></p>
+    </div>
+    <a href="/registro" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Volver a la lista</a>
+</div>
+</body>
+</html>
